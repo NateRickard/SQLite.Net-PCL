@@ -3,8 +3,6 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>12.0.0</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{2C3224FB-4513-4A16-B67F-3C4F1BDC7765}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
@@ -16,7 +14,7 @@
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <AssemblyName>SQLite.Net.Tests.XamarinAndroid</AssemblyName>
-    <TargetFrameworkVersion>v4.0.3</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -48,7 +46,7 @@
     <Reference Include="Xamarin.Android.NUnitLite" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\*.cs"/>
+    <Compile Include="..\*.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="TestsSample.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
@@ -73,7 +71,7 @@
       <Name>SQLite.Net.Async</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\src\SQLite.Net.Platform.XamarinAndroid\SQLite.Net.Platform.XamarinAndroid.csproj">
-      <Project>{219700f0-5444-4250-87d6-0551b39ca402}</Project>
+      <Project>{219700F0-5444-4250-87D6-0551B39CA402}</Project>
       <Name>SQLite.Net.Platform.XamarinAndroid</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\src\SQLite.Net\SQLite.Net.csproj">
@@ -81,5 +79,5 @@
       <Name>SQLite.Net</Name>
     </ProjectReference>
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
